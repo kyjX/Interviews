@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    master:
+      url: jdbc:h2:mem:master;DB_CLOSE_DELAY=-1;MODE=MySQL
+      driver-class-name: org.h2.Driver
+      username: sa
+      password:
+    slave:
+      url: jdbc:h2:mem:slave;DB_CLOSE_DELAY=-1;MODE=MySQL
+      driver-class-name: org.h2.Driver
+      username: sa
+      password:
+
+logging:
+  level:
+    com.example.rw: INFO
